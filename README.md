@@ -1,12 +1,12 @@
-Math Extras Scratch Extension 1.1
+//Math Extras Scratch Extension 1.1
 
-Description
+//Description
 
-The Math Extras Scratch Extension adds additional mathematical functionalities to Scratch projects. It includes blocks for various mathematical operations such as checking for integers and decimals, calculating cube roots and powers, determining if a number is in the Fibonacci sequence, checking if a number is odd, prime, or even, providing constants like infinity and π, computing averages, factorials, greatest common divisors (GCD), least common multiples (LCM), reversing numbers, checking for Armstrong numbers, generating Fibonacci series, identifying perfect numbers, calculating the sum of primes, determining amicable pairs, counting divisors, checking for abundant numbers, and finding the nth prime number.
+//The Math Extras Scratch Extension adds additional mathematical functionalities to Scratch projects. It includes blocks for various mathematical operations such as checking for integers and decimals, calculating cube roots and powers, determining if a number is in the Fibonacci sequence, checking if a number is odd, prime, or even, providing constants like infinity and π, computing averages, factorials, greatest common divisors (GCD), least common multiples (LCM), reversing numbers, checking for Armstrong numbers, generating Fibonacci series, identifying perfect numbers, calculating the sum of primes, determining amicable pairs, counting divisors, checking for abundant numbers, and finding the nth prime number.
 
-Usage
+//Usage
 
-Download the file.
+//Download the file.
 Open Turbowarp.
 Go to the "Extensions" section.
 Click on "Add Extension" and choose "Custom Extension".
@@ -17,29 +17,7 @@ Blocks
 
 The Math Extras extension provides the following blocks:
 
-Is [number] an integer?
-
-Is [number] a decimal?
-
-The cube root of [number]
-
-[base] to the power of [exponent]
-
-[number] is in Fibonacci sequence
-
-[number] is [odd/prime/even]
-
-∞
-
-π
-
-Average of [numbers]
-
-Factorial of [number]
-
-GCD of [num1] and [num2]
-
-LCM of [num1] and [num2]
+Old Blocks
 
 Reverse digits of [number]
 
@@ -59,8 +37,8 @@ Number of divisors of [number]
 
 Nth prime number [index]
 
-Examples
-Check if a number is an integer:
+//Examples
+//Check if a number is an integer:
 
 scratch
 Copy code
@@ -82,4 +60,3 @@ scratch
 Copy code
 When green flag clicked
 set [series v] to [Fibonacci series up to (10)]
-License
