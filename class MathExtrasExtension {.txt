@@ -1,0 +1,471 @@
+class MathExtrasExtension {
+    getInfo() {
+        return {
+            "id": "mathExtras",
+            "name": "Math Extras",
+            "blocks": [
+                {
+                    "opcode": "isInteger",
+                    "blockType": "Boolean",
+                    "text": "Is [number] an integer?",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 0
+                        }
+                    }
+                },
+                {
+                    "opcode": "isDecimal",
+                    "blockType": "Boolean",
+                    "text": "Is [number] a decimal?",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 0
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "cubeRoot",
+                    "blockType": "reporter",
+                    "text": "the cube root of [number]",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 0
+                        }
+                    }
+                },
+                {
+                    "opcode": "powerOf",
+                    "blockType": "reporter",
+                    "text": "[base] to the power of [exponent]",
+                    "arguments": {
+                        "base": {
+                            "type": "number",
+                            "defaultValue": 0
+                        },
+                        "exponent": {
+                            "type": "number",
+                            "defaultValue": 2
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "isFibonacci",
+                    "blockType": "Boolean",
+                    "text": "[number] is in Fibonacci sequence",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 5
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "isOddPrimeOrEven",
+                    "blockType": "Boolean",
+                    "text": "[number] is [oddPrimeEven]",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 2
+                        },
+                        "oddPrimeEven": {
+                            "type": "string",
+                            "menu": "oddPrimeEvenOptions",
+                            "defaultValue": "odd"
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "infinity",
+                    "blockType": "reporter",
+                    "text": "∞"
+                },
+                {
+                    "opcode": "pi",
+                    "blockType": "reporter",
+                    "text": "π"
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "average",
+                    "blockType": "reporter",
+                    "text": "average of [numbers]",
+                    "arguments": {
+                        "numbers": {
+                            "type": "array",
+                            "defaultValue": []
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "factorial",
+                    "blockType": "reporter",
+                    "text": "factorial of [number]",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 5
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "gcd",
+                    "blockType": "reporter",
+                    "text": "gcd of [num1] and [num2]",
+                    "arguments": {
+                        "num1": {
+                            "type": "number",
+                            "defaultValue": 36
+                        },
+                        "num2": {
+                            "type": "number",
+                            "defaultValue": 24
+                        }
+                    }
+                },
+                {
+                    "opcode": "lcm",
+                    "blockType": "reporter",
+                    "text": "lcm of [num1] and [num2]",
+                    "arguments": {
+                        "num1": {
+                            "type": "number",
+                            "defaultValue": 4
+                        },
+                        "num2": {
+                            "type": "number",
+                            "defaultValue": 6
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "reverseNumber",
+                    "blockType": "reporter",
+                    "text": "reverse digits of [number]",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 123
+                        }
+                    }
+                },
+                {
+                    "opcode": "isArmstrongNumber",
+                    "blockType": "Boolean",
+                    "text": "[number] is an Armstrong number?",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 153
+                        }
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "opcode": "fibonacciSeries",
+                    "blockType": "reporter",
+                    "text": "Fibonacci series up to [limit]",
+                    "arguments": {
+                        "limit": {
+                            "type": "number",
+                            "defaultValue": 10
+                        }
+                    }
+                },
+                {
+                    "opcode": "isPerfectNumber",
+                    "blockType": "Boolean",
+                    "text": "[number] is a perfect number?",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 28
+                        }
+                    }
+                },
+                {
+                    "opcode": "sumOfPrimes",
+                    "blockType": "reporter",
+                    "text": "Sum of primes up to [limit]",
+                    "arguments": {
+                        "limit": {
+                            "type": "number",
+                            "defaultValue": 10
+                        }
+                    }
+                },
+                {
+                    "opcode": "isAmicablePair",
+                    "blockType": "Boolean",
+                    "text": "[number1] and [number2] are an amicable pair?",
+                    "arguments": {
+                        "number1": {
+                            "type": "number",
+                            "defaultValue": 220
+                        },
+                        "number2": {
+                            "type": "number",
+                            "defaultValue": 284
+                        }
+                    }
+                },
+                {
+                    "opcode": "numberOfDivisors",
+                    "blockType": "reporter",
+                    "text": "Number of divisors of [number]",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 10
+                        }
+                    }
+                },
+                {
+                    "opcode": "isAbundantNumber",
+                    "blockType": "Boolean",
+                    "text": "[number] is an abundant number?",
+                    "arguments": {
+                        "number": {
+                            "type": "number",
+                            "defaultValue": 12
+                        }
+                    }
+                },
+                {
+                    "opcode": "nthPrime",
+                    "blockType": "reporter",
+                    "text": "Nth prime number [index]",
+                    "arguments": {
+                        "index": {
+                            "type": "number",
+                            "defaultValue": 10
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "oddPrimeEvenOptions": ["odd", "prime", "even"],
+                "comparisonOperators": ["=", "≠", ">", "<", "≥", "≤"]
+            },
+            "color1": "#1e750d"
+        };
+    }
+
+    // Existing methods...
+
+    isInteger(args) {
+        const number = args.number;
+        return Number.isInteger(number);
+    }
+
+    isDecimal(args) {
+        const number = args.number;
+        return !Number.isInteger(number);
+    }
+
+    cubeRoot(args) {
+        const number = args.number;
+        return Math.cbrt(number);
+    }
+
+    powerOf(args) {
+        const base = args.base;
+        const exponent = args.exponent;
+        return Math.pow(base, exponent);
+    }
+
+    isFibonacci(args) {
+        const number = args.number;
+        // Implementation of Fibonacci sequence check
+        // Return true if number is in Fibonacci sequence, false otherwise
+    }
+
+    isOddPrimeOrEven(args) {
+        const number = args.number;
+        const oddPrimeEven = args.oddPrimeEven;
+
+        switch (oddPrimeEven) {
+            case "odd":
+                return number % 2 !== 0;
+            case "prime":
+                return this.isPrime(number);
+            case "even":
+                return number % 2 === 0;
+            default:
+                return false;
+        }
+    }
+
+    infinity() {
+        return Infinity;
+    }
+
+    pi() {
+        return Math.PI;
+    }
+
+    average(args) {
+        const numbers = args.numbers;
+        if (numbers.length === 0) return 0;
+        const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+        return sum / numbers.length;
+    }
+
+    factorial(args) {
+        const number = args.number;
+        let result = 1;
+        for (let i = 2; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    gcd(args) {
+        const num1 = args.num1;
+        const num2 = args.num2;
+        return this.gcdRecursive(num1, num2);
+    }
+
+    gcdRecursive(a, b) {
+        if (b === 0) return a;
+        return this.gcdRecursive(b, a % b);
+    }
+
+    lcm(args) {
+        const num1 = args.num1;
+        const num2 = args.num2;
+        return (num1 * num2) / this.gcdRecursive(num1, num2);
+    }
+
+    // Helper function to check if a number is prime
+    isPrime(number) {
+        if (number <= 1) return false;
+        if (number <= 3) return true;
+        if (number % 2 === 0 || number % 3 === 0) return false;
+        let i = 5;
+        while (i * i <= number) {
+            if (number % i === 0 || number % (i + 2) === 0) return false;
+            i += 6;
+        }
+        return true;
+    }
+
+    // New methods...
+
+    reverseNumber(args) {
+        const number = args.number;
+        return parseFloat(number.toString().split('').reverse().join('')) * Math.sign(number);
+    }
+
+    isArmstrongNumber(args) {
+        const number = args.number;
+        const digits = number.toString().length;
+        let sum = 0;
+        let temp = number;
+        while (temp > 0) {
+            const digit = temp % 10;
+            sum += Math.pow(digit, digits);
+            temp = Math.floor(temp / 10);
+        }
+        return sum === number;
+    }
+
+    fibonacciSeries(args) {
+        const limit = args.limit;
+        const series = [0, 1];
+        for (let i = 2; i < limit; i++) {
+            const next = series[i - 1] + series[i - 2];
+            if (next <= limit) series.push(next);
+            else break;
+        }
+        return series.join(', ');
+    }
+
+    isPerfectNumber(args) {
+        const number = args.number;
+        let sum = 1;
+        for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
+            if (number % i === 0) {
+                sum += i;
+                if (i !== number / i) sum += number / i;
+            }
+        }
+        return sum === number && number !== 1;
+    }
+
+    sumOfPrimes(args) {
+        const limit = args.limit;
+        let sum = 0;
+        for (let i = 2; i <= limit; i++) {
+            if (this.isPrime(i)) sum += i;
+        }
+        return sum;
+    }
+
+    isAmicablePair(args) {
+        const number1 = args.number1;
+        const number2 = args.number2;
+        return this.sumOfDivisors(number1) === number2 && this.sumOfDivisors(number2) === number1;
+    }
+
+    numberOfDivisors(args) {
+        const number = args.number;
+       
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    isAbundantNumber(args) {
+        const number = args.number;
+        return this.sumOfDivisors(number) > 2 * number;
+    }
+
+    nthPrime(args) {
+        const index = args.index;
+        let count = 0;
+        let num = 2;
+        while (count < index) {
+            if (this.isPrime(num)) count++;
+            if (count === index) return num;
+            num++;
+        }
+    }
+};
+
+Scratch.extensions.register(new MathExtrasExtension());
+
+
